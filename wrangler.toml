@@ -6,3 +6,6 @@ send_metrics = false
 routes = [
   { pattern = "edmagu.ro/*", zone_id = "79c1e3c75f305e5eb3bd174a577fd68d" },
 ]
+
+[vars]
+_ = "Dummy value to always generate Env interface"

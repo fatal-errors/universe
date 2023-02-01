@@ -7,5 +7,6 @@
     "target": "ESNext",
     "types": ["@cloudflare/workers-types"]
   },
+  "include": ["src/**/*.ts", "worker-configuration.d.ts"],
   "exclude": [".yarn", "node_modules"]
 }
