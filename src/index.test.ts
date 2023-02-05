@@ -8,6 +8,7 @@ describe("Worker", () => {
   beforeAll(async () => {
     worker = await unstable_dev("src/index.ts", {
       experimental: { disableExperimentalWarning: true },
+      vars: { WEBHOOK_URL: "https://example.com" },
     });
   });
 
