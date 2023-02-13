@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base"],
-  "lockFileMaintenance": { "enabled": true }
+  "extends": ["config:base", "schedule:daily", ":maintainLockFilesWeekly"],
+  "postUpdateOptions": ["yarnDedupeHighest"],
+  "rebaseWhen": "conflicted"
 }
