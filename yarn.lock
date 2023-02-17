@@ -1481,10 +1481,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:0.37.34":
-  version: 0.37.34
-  resolution: "discord-api-types@npm:0.37.34"
-  checksum: eaaa6fafcb6679de296e68ef0923656d63a51523202075e8f6436da2b87a19ad17f1fc0a805720cd9e833b87a97a22a3194958f034558d5a182c8f0ebc2626da
+"discord-api-types@npm:0.37.35":
+  version: 0.37.35
+  resolution: "discord-api-types@npm:0.37.35"
+  checksum: 0a65234eefb9675c6faf82f42be6b0a4ee75bf8b2c901eecefea6ca539cd4e2a501b7fc195415884912fdb5040c98727dbd0c5a1f6bc15951948be37d1be162b
   languageName: node
   linkType: hard
 
@@ -1530,7 +1530,7 @@ __metadata:
     "@types/prettier": 2.7.2
     "@typescript-eslint/eslint-plugin": 5.52.0
     "@typescript-eslint/parser": 5.52.0
-    discord-api-types: 0.37.34
+    discord-api-types: 0.37.35
     eslint: 8.34.0
     eslint-config-prettier: 8.6.0
     eslint-import-resolver-typescript: 3.5.3
