@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\" --cache",
-    "format": "prettier . --write",
-    "format:check": "prettier --check .",
-    "test": "vitest run",
     "dev": "wrangler dev",
+    "format:check": "prettier --check .",
+    "format": "prettier . --write",
+    "lint": "eslint \"src/**/*.ts\" --cache",
+    "test": "vitest run",
     "deploy": "wrangler publish"
   },
   "devDependencies": {
