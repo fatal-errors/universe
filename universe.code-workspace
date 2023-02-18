@@ -1,6 +1,7 @@
 {
   "folders": [
     { "path": "apps/edmaguro" },
+    { "path": "apps/fatalerrors" },
     { "path": "packages/eslint-config-universe" },
     { "path": "packages/tsconfig" },
     { "path": "." }
