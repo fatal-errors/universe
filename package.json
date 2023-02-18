@@ -1,33 +1,17 @@
 {
-  "name": "edmaguro",
-  "version": "0.0.0",
-  "private": true,
+  "name": "universe",
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\" --ignore-path .gitignore --cache",
-    "fmt": "prettier . --write",
-    "fmt:check": "prettier --check .",
-    "start": "wrangler dev",
-    "deploy": "wrangler publish",
-    "test": "vitest run"
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check",
+    "test": "turbo run test",
+    "build": "turbo run build"
   },
+  "packageManager": "yarn@3.4.1",
   "devDependencies": {
-    "@cloudflare/workers-types": "3.19.0",
-    "@tsconfig/strictest": "1.0.2",
-    "@types/eslint": "8.21.1",
-    "@types/prettier": "2.7.2",
-    "@typescript-eslint/eslint-plugin": "5.52.0",
-    "@typescript-eslint/parser": "5.52.0",
-    "discord-api-types": "0.37.35",
-    "eslint": "8.34.0",
-    "eslint-config-prettier": "8.6.0",
-    "eslint-import-resolver-typescript": "3.5.3",
-    "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-simple-import-sort": "10.0.0",
-    "prettier": "2.8.4",
-    "typescript": "4.9.5",
-    "vitest": "0.28.5",
-    "wrangler": "2.10.0"
-  },
-  "packageManager": "yarn@3.4.1"
+    "turbo": "1.8.1"
+  }
 }
