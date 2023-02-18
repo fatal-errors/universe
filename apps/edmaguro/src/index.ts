@@ -4,9 +4,18 @@ interface Environment extends Env {
   WEBHOOK_URL: string;
 }
 
+type Cf = IncomingRequestCfProperties & {
+  country: string;
+  city?: string;
+};
+
+interface Request2 extends Request {
+  cf?: Cf;
+}
+
 export default {
-  async fetch(req: Request, env: Environment) {
-    const ipAddress = req.headers.get("CF-Connecting-IP");
+  async fetch(request: Request2, environment: Environment) {
+    const ipAddress = request.headers.get("CF-Connecting-IP");
 
     const message: Partial<APIMessage> = {
       embeds: [
@@ -21,30 +30,30 @@ export default {
             },
             {
               name: "ASN",
-              value: `${req.cf?.asn ?? "Not Found"}`,
+              value: `${request.cf?.asn ?? "Not Found"}`,
             },
             {
               name: "AS Organization",
-              value: `${req.cf?.asOrganization ?? "Not Found"}`,
+              value: `${request.cf?.asOrganization ?? "Not Found"}`,
             },
             {
               name: "Data Center",
-              value: `${req.cf?.colo ?? "Not Found"}`,
+              value: `${request.cf?.colo ?? "Not Found"}`,
             },
             {
               name: "Country",
-              value: `${req.cf?.country ?? "Not Found"}`,
+              value: `${request.cf?.country ?? "Not Found"}`,
             },
             {
               name: "City",
-              value: `${req.cf?.city ?? "Not Found"}`,
+              value: `${request.cf?.city ?? "Not Found"}`,
             },
           ],
         },
       ],
     };
 
-    await fetch(env.WEBHOOK_URL, {
+    await fetch(environment.WEBHOOK_URL, {
       body: JSON.stringify(message),
       method: "POST",
       headers: { "content-type": "application/json;charset=UTF-8" },

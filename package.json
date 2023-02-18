@@ -1,7 +1,8 @@
 {
   "name": "universe",
   "workspaces": [
-    "apps/*"
+    "apps/*",
+    "packages/*"
   ],
   "scripts": {
     "lint": "turbo run lint",

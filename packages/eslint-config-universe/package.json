@@ -1,0 +1,27 @@
+{
+  "name": "@universe/eslint-config-universe",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
+    "lint": "eslint \"**/*.js\" --cache"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-import-resolver-typescript": "3.5.3",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "eslint-plugin-turbo": "0.0.8"
+  },
+  "devDependencies": {
+    "@universe/tsconfig": "workspace:*",
+    "eslint": "8.34.0",
+    "prettier": "2.8.4",
+    "typescript": "4.9.5"
+  }
+}

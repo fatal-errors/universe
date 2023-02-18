@@ -1,12 +1,8 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@universe/tsconfig/base",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "target": "ESNext",
-    "types": ["@cloudflare/workers-types"]
+    "types": ["@cloudflare/workers-types/experimental"]
   },
-  "include": ["src/**/*.ts", "worker-configuration.d.ts"],
-  "exclude": [".yarn", "node_modules"]
+  "include": ["src/**/*.ts", "worker-configuration.d.ts"]
 }

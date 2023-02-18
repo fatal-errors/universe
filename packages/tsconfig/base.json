@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Base",
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "exclude": [".turbo", "node_modules"]
+}
