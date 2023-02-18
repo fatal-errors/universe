@@ -4,7 +4,8 @@ compatibility_date = "2023-01-22"
 send_metrics = false
 
 routes = [
-  { pattern = "edmagu.ro/*", zone_id = "79c1e3c75f305e5eb3bd174a577fd68d" },
+  { pattern = "edmagu.ro", zone_id = "63edc8cce616f1c5923233c3d90179ca", custom_domain = true },
+  { pattern = "edmagu.ro/*", zone_id = "63edc8cce616f1c5923233c3d90179ca" },
 ]
 
 [vars]
