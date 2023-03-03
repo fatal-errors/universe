@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "lint": "eslint \"**/*.js\" --cache"
+    "lint": "eslint . --cache"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.54.0",

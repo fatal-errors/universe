@@ -5,17 +5,9 @@
       "dependsOn": ["^build"],
       "outputs": ["build/**"]
     },
-    "format": {
-      "outputs": ["**"]
-    },
-    "format:check": {
-      "outputs": []
-    },
-    "lint": {
-      "outputs": []
-    },
-    "test": {
-      "outputs": []
-    }
+    "format": {},
+    "format:check": {},
+    "lint": {},
+    "test": {}
   }
 }

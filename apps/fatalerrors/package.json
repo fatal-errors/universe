@@ -7,7 +7,7 @@
     "dev": "vite preview --config vite.config.ts",
     "format": "prettier . --write --ignore-path .gitignore",
     "format:check": "prettier . --check --ignore-path .gitignore",
-    "lint": "eslint \"**/*.ts\" --cache"
+    "lint": "eslint . --cache"
   },
   "devDependencies": {
     "@universe/eslint-config-universe": "workspace:*",
