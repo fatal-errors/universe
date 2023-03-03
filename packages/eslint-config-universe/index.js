@@ -1,7 +1,9 @@
 /** @type {import('eslint').Linter.Config} */
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   extends: [
     "eslint:recommended",
+    "plugin:unicorn/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -19,12 +21,14 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "simple-import-sort"],
   rules: {
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
-    "sort-imports": "off",
+    "import/exports-last": "error",
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
+    "import/order": "off",
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "sort-imports": "off",
   },
   settings: {
     "import/resolver": {
