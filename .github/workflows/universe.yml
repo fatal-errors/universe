@@ -1,0 +1,92 @@
+name: Builds, tests & co
+
+on:
+  - push
+  - pull_request
+
+permissions: read-all
+
+jobs:
+  hygiene:
+    name: Hygiene
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+
+    env:
+      TURBO_API: http://127.0.0.1:9080
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: fatal-errors
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@v3
+
+      - name: Set-up Node.js LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: Set-up turborepo server
+        uses: felixmosh/turborepo-gh-artifacts@v2
+        with:
+          repo-token: ${{ github.token }}
+          server-token: ${{ secrets.TURBO_TOKEN }}
+
+      # Dependencies
+      - run: yarn install --immutable
+
+      # Check formatting with prettier
+      - run: yarn format:check
+
+      # Linting with eslint
+      - run: yarn lint
+
+  build-and-test:
+    name: Build and Test
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+
+    runs-on: ${{ matrix.os }}
+
+    env:
+      TURBO_API: http://127.0.0.1:9080
+      TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+      TURBO_TEAM: fatal-errors
+
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@v3
+
+      - name: Set-up Node.js LTS
+        uses: actions/setup-node@v3
+        with:
+          node-version: lts/*
+
+      - name: Set-up turborepo server
+        uses: felixmosh/turborepo-gh-artifacts@v2
+        with:
+          repo-token: ${{ github.token }}
+          server-token: ${{ secrets.TURBO_TOKEN }}
+
+      # Dependencies
+      - run: yarn install --immutable
+
+      # Run the testsuite
+      - run: yarn test
+
+      # Build
+      - run: yarn build
