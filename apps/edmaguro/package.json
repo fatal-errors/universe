@@ -6,7 +6,7 @@
     "dev": "wrangler dev",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
-    "lint": "TIMING=1 eslint . --cache",
+    "lint": "TIMING=1 eslint .",
     "test": "vitest run",
     "deploy": "wrangler publish"
   },
