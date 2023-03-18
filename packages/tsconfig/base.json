@@ -2,5 +2,8 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Base",
   "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "5.0"
+  },
   "exclude": [".turbo", "node_modules"]
 }
