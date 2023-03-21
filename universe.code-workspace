@@ -5,5 +5,8 @@
     { "path": "packages/eslint-config-universe" },
     { "path": "packages/tsconfig" },
     { "path": "." }
-  ]
+  ],
+  "settings": {
+    "typescript.tsdk": "universe/node_modules/typescript/lib"
+  }
 }
