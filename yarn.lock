@@ -949,7 +949,7 @@ __metadata:
     "@universe/tsconfig": "workspace:*"
     discord-api-types: 0.37.36
     eslint: 8.36.0
-    prettier: 2.8.4
+    prettier: 2.8.6
     typescript: 5.0.2
     vitest: 0.29.7
     wrangler: 2.13.0
@@ -971,7 +971,7 @@ __metadata:
     eslint-plugin-simple-import-sort: 10.0.0
     eslint-plugin-turbo: 0.0.10
     eslint-plugin-unicorn: 46.0.0
-    prettier: 2.8.4
+    prettier: 2.8.6
     typescript: 5.0.2
   languageName: unknown
   linkType: soft
@@ -983,7 +983,7 @@ __metadata:
     "@universe/eslint-config-universe": "workspace:*"
     "@universe/tsconfig": "workspace:*"
     eslint: 8.36.0
-    prettier: 2.8.4
+    prettier: 2.8.6
     typescript: 5.0.2
     vite: 4.2.0
   languageName: unknown
@@ -994,7 +994,7 @@ __metadata:
   resolution: "@universe/tsconfig@workspace:packages/tsconfig"
   dependencies:
     "@tsconfig/strictest": 1.0.2
-    prettier: 2.8.4
+    prettier: 2.8.6
   languageName: unknown
   linkType: soft
 
@@ -3939,12 +3939,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.8.4":
-  version: 2.8.4
-  resolution: "prettier@npm:2.8.4"
+"prettier@npm:2.8.6":
+  version: 2.8.6
+  resolution: "prettier@npm:2.8.6"
   bin:
     prettier: bin-prettier.js
-  checksum: c173064bf3df57b6d93d19aa98753b9b9dd7657212e33b41ada8e2e9f9884066bb9ca0b4005b89b3ab137efffdf8fbe0b462785aba20364798ff4303aadda57e
+  checksum: 8ac94fa67aec0e65743ea15ebf954ef2f1e52638abd129dc04e8b49e8bb3224c0233c98df6b5c98efd31bd2a43866590486559438ee4ead09dc81be389068572
   languageName: node
   linkType: hard
 

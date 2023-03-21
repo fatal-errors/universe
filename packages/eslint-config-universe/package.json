@@ -22,7 +22,7 @@
   "devDependencies": {
     "@universe/tsconfig": "workspace:*",
     "eslint": "8.36.0",
-    "prettier": "2.8.4",
+    "prettier": "2.8.6",
     "typescript": "5.0.2"
   }
 }
