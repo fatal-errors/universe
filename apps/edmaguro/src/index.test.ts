@@ -13,7 +13,11 @@ describe("Worker", () => {
   });
 
   afterAll(async () => {
-    await worker.stop();
+    try {
+      await worker.stop();
+    } catch (error) {
+      console.error(error);
+    }
   });
 
   it("tests worker", async () => {
