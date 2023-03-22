@@ -4,17 +4,11 @@ interface Environment extends Env {
   WEBHOOK_URL: string;
 }
 
-type Cf = IncomingRequestCfProperties & {
-  country: string;
-  city?: string;
-};
-
-interface Request2 extends Request {
-  cf?: Cf;
-}
-
 export default {
-  async fetch(request: Request2, environment: Environment) {
+  async fetch(
+    request: Request<unknown, IncomingRequestCfProperties>,
+    environment: Environment
+  ) {
     const ipAddress = request.headers.get("CF-Connecting-IP");
 
     const message: Partial<APIMessage> = {
