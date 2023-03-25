@@ -17,7 +17,7 @@
     "@universe/tsconfig": "workspace:*",
     "discord-api-types": "0.37.36",
     "eslint": "8.36.0",
-    "prettier": "2.8.6",
+    "prettier": "2.8.7",
     "typescript": "5.0.2",
     "vitest": "0.29.7",
     "wrangler": "2.13.0"
