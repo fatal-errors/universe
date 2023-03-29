@@ -969,7 +969,7 @@ __metadata:
     eslint-plugin-import: 2.27.5
     eslint-plugin-prettier: 4.2.1
     eslint-plugin-simple-import-sort: 10.0.0
-    eslint-plugin-turbo: 1.8.6
+    eslint-plugin-turbo: 1.8.8
     eslint-plugin-unicorn: 46.0.0
     prettier: 2.8.7
     typescript: 5.0.2
@@ -2097,12 +2097,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.8.6":
-  version: 1.8.6
-  resolution: "eslint-plugin-turbo@npm:1.8.6"
+"eslint-plugin-turbo@npm:1.8.8":
+  version: 1.8.8
+  resolution: "eslint-plugin-turbo@npm:1.8.8"
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 701b40bc855a4fdb8384b3a2a19c2220ab3fe4eafc3854af43b1956f8dad16667b1e3400be01e83241ae9db97378b0775856e13e4e78165fdadaf974604a71c6
+  checksum: 395ec58653c3ee0c0559e153d68f0977930fb56f55043c4944f0683e122f623f356da0d967f27a12fc253442e5c5e8f6b8f8954fd91810128ba06723d8a30aa0
   languageName: node
   linkType: hard
 
