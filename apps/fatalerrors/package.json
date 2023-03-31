@@ -14,7 +14,7 @@
     "@universe/tsconfig": "workspace:*",
     "eslint": "8.37.0",
     "prettier": "2.8.7",
-    "typescript": "5.0.2",
+    "typescript": "5.0.3",
     "vite": "4.2.1"
   }
 }
