@@ -10,7 +10,7 @@
     "format:check": "prettier . --check"
   },
   "dependencies": {
-    "@tsconfig/strictest": "2.0.0"
+    "@tsconfig/strictest": "2.0.1"
   },
   "devDependencies": {
     "prettier": "2.8.7"
