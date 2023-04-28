@@ -967,6 +967,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@universe/eslint-config-universe@workspace:packages/eslint-config-universe"
   dependencies:
+    "@types/eslint": 8.37.0
     "@typescript-eslint/eslint-plugin": 5.59.1
     "@typescript-eslint/parser": 5.59.1
     "@universe/tsconfig": "workspace:*"
