@@ -3,9 +3,6 @@
   "extends": "@universe/tsconfig/base",
   "compilerOptions": {
     "lib": ["ESNext"],
-    "module": "ESNext",
-    "moduleResolution": "nodenext",
-    "target": "ESNext",
     "types": ["@cloudflare/workers-types/experimental"]
   },
   "include": ["src/**/*.ts", "vitest.config.ts", "worker-configuration.d.ts"]

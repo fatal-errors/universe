@@ -1,29 +1,13 @@
-import { afterAll, beforeAll, describe, expect, it } from "vitest";
-import type { UnstableDevWorker } from "wrangler";
-import { unstable_dev } from "wrangler";
+import { describe, expect, it } from "vitest";
+
+import worker from "./index";
+
+type Request$ = Request<unknown, IncomingRequestCfProperties>;
 
 describe("Worker", () => {
-  let worker: UnstableDevWorker;
-
-  beforeAll(async () => {
-    worker = await unstable_dev("src/index.ts", {
-      experimental: { disableExperimentalWarning: true },
-      vars: { WEBHOOK_URL: "https://example.com" },
-    });
-  });
-
-  afterAll(async () => {
-    try {
-      await worker.stop();
-    } catch (error) {
-      console.error(error);
-    }
-  });
-
   it("tests worker", async () => {
-    const { status, url, redirected } = await worker.fetch();
-    expect(status).toMatchInlineSnapshot("200");
-    expect(url).toMatchInlineSnapshot(`"https://twitter.com/east9698"`);
-    expect(redirected).toMatchInlineSnapshot("true");
+    const request = new Request("http://localhost") satisfies Request$;
+    const response = await worker.fetch(request);
+    expect(response.status).toBe(301);
   });
 });

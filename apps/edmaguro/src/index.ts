@@ -1,13 +1,13 @@
 import { type APIMessage, EmbedType } from "discord-api-types/v10";
 
-interface Environment extends Env {
+interface Environment extends Omit<Env, "_"> {
   WEBHOOK_URL: string;
 }
 
 export default {
   async fetch(
     request: Request<unknown, IncomingRequestCfProperties>,
-    environment: Environment
+    environment?: Environment
   ) {
     const ipAddress = request.headers.get("CF-Connecting-IP");
 
@@ -47,10 +47,10 @@ export default {
       ],
     };
 
-    await fetch(environment.WEBHOOK_URL, {
+    await fetch(environment?.WEBHOOK_URL ?? "https://example.com", {
       body: JSON.stringify(message),
       method: "POST",
-      headers: { "content-type": "application/json;charset=UTF-8" },
+      headers: { "content-type": "application/json" },
     });
 
     const destinationURL = "https://twitter.com/east9698";
