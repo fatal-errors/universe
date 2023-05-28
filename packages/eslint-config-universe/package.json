@@ -20,9 +20,9 @@
     "eslint-plugin-unicorn": "47.0.0"
   },
   "devDependencies": {
-    "@types/eslint": "8.37.0",
+    "@types/eslint": "8.40.0",
     "@universe/tsconfig": "workspace:*",
-    "eslint": "8.40.0",
+    "eslint": "8.41.0",
     "prettier": "2.8.8",
     "typescript": "5.0.4"
   }
