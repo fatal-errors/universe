@@ -15,7 +15,7 @@
     "@types/eslint": "8.44.0",
     "@universe/eslint-config-universe": "workspace:*",
     "@universe/tsconfig": "workspace:*",
-    "discord-api-types": "0.37.47",
+    "discord-api-types": "0.37.48",
     "eslint": "8.44.0",
     "prettier": "2.8.8",
     "typescript": "5.1.6",
