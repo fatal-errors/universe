@@ -1,13 +1,12 @@
 /** @type {import('eslint').Linter.Config} */
-// eslint-disable-next-line unicorn/prefer-module
+
+// eslint-disable-next-line unicorn/no-empty-file, unicorn/prefer-module
 module.exports = {
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:unicorn/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:@typescript-eslint/strict",
     "plugin:import/recommended",
     "plugin:import/typescript",
     "plugin:prettier/recommended",
