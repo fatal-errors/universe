@@ -7,7 +7,7 @@ interface Environment extends Omit<Env, "_"> {
 export default {
   async fetch(
     request: Request<unknown, IncomingRequestCfProperties>,
-    environment?: Environment
+    environment?: Environment,
   ) {
     const ipAddress = request.headers.get("CF-Connecting-IP");
 
