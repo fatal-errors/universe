@@ -1019,7 +1019,7 @@ __metadata:
     eslint-plugin-import: 2.27.5
     eslint-plugin-prettier: 5.0.0
     eslint-plugin-simple-import-sort: 10.0.0
-    eslint-plugin-turbo: 1.10.8
+    eslint-plugin-turbo: 1.10.9
     eslint-plugin-unicorn: 48.0.0
     prettier: 3.0.0
     typescript: 5.1.6
@@ -2325,14 +2325,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.10.8":
-  version: 1.10.8
-  resolution: "eslint-plugin-turbo@npm:1.10.8"
+"eslint-plugin-turbo@npm:1.10.9":
+  version: 1.10.9
+  resolution: "eslint-plugin-turbo@npm:1.10.9"
   dependencies:
     dotenv: 16.0.3
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 310af8f022f7cb9fb5b012fc349a5e234137780c6e2821b04632cca826564b2532a43821680b2bcbdd02a380193044f91b1e8cdde1e28b4775104f36f34bf440
+  checksum: ad71a1789d1a860738335a88ffeeb384c4722aeb5ccbfa63655fc64bba9e60b8998ca1a0a5e4dece322234dac3da2af2e21a45cbe4311fd124adde87743e0eb8
   languageName: node
   linkType: hard
 
@@ -5293,58 +5293,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-darwin-64@npm:1.10.8"
+"turbo-darwin-64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-darwin-64@npm:1.10.9"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-darwin-arm64@npm:1.10.8"
+"turbo-darwin-arm64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-darwin-arm64@npm:1.10.9"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-linux-64@npm:1.10.8"
+"turbo-linux-64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-linux-64@npm:1.10.9"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-linux-arm64@npm:1.10.8"
+"turbo-linux-arm64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-linux-arm64@npm:1.10.9"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-windows-64@npm:1.10.8"
+"turbo-windows-64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-windows-64@npm:1.10.9"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo-windows-arm64@npm:1.10.8"
+"turbo-windows-arm64@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo-windows-arm64@npm:1.10.9"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:1.10.8":
-  version: 1.10.8
-  resolution: "turbo@npm:1.10.8"
+"turbo@npm:1.10.9":
+  version: 1.10.9
+  resolution: "turbo@npm:1.10.9"
   dependencies:
-    turbo-darwin-64: 1.10.8
-    turbo-darwin-arm64: 1.10.8
-    turbo-linux-64: 1.10.8
-    turbo-linux-arm64: 1.10.8
-    turbo-windows-64: 1.10.8
-    turbo-windows-arm64: 1.10.8
+    turbo-darwin-64: 1.10.9
+    turbo-darwin-arm64: 1.10.9
+    turbo-linux-64: 1.10.9
+    turbo-linux-arm64: 1.10.9
+    turbo-windows-64: 1.10.9
+    turbo-windows-arm64: 1.10.9
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -5360,7 +5360,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 9fd2f9b17461a688e200329c4d910969e828b22c375e88759cd0e59f96db7aac115d289ed20af42db23030b4a4ae0334d1a37bf0a5caf2fdc8a618476742238f
+  checksum: 667867c3ea6ecf59cafe494e1bd4da8564bdae4ea735a14813656b2784a909fb69f12f8c6cdb140ca490c602fd11dc186b5d426af6a451ba51a487e73b742731
   languageName: node
   linkType: hard
 
@@ -5527,7 +5527,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "universe@workspace:."
   dependencies:
-    turbo: 1.10.8
+    turbo: 1.10.9
   languageName: unknown
   linkType: soft
 
