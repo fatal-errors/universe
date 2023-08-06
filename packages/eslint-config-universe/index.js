@@ -1,6 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 
-// eslint-disable-next-line unicorn/no-empty-file, unicorn/prefer-module
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   extends: [
     "eslint:recommended",
@@ -28,10 +28,14 @@ module.exports = {
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "sort-imports": "off",
+    complexity: ["error", 10],
   },
   settings: {
     "import/resolver": {
-      typescript: { alwaysTryTypes: true, project: "tsconfig.json" },
+      typescript: {
+        alwaysTryTypes: true,
+        project: "tsconfig.json",
+      },
     },
   },
   reportUnusedDisableDirectives: true,
