@@ -9,51 +9,53 @@ export default {
     request: Request<unknown, IncomingRequestCfProperties>,
     environment?: Environment,
   ) {
-    const ipAddress = request.headers.get("CF-Connecting-IP");
+    if (environment?.WEBHOOK_URL) {
+      const ipAddress = request.headers.get("CF-Connecting-IP");
 
-    const message: Partial<APIMessage> = {
-      embeds: [
-        {
-          type: EmbedType.Rich,
-          title: "edmagu.roにアクセスがありました",
-          description: "Visitor's Private Geolocation Data",
-          fields: [
-            {
-              name: "IP Address",
-              value: `${ipAddress ?? "Not Found"}`,
-            },
-            {
-              name: "ASN",
-              value: `${request.cf?.asn ?? "Not Found"}`,
-            },
-            {
-              name: "AS Organization",
-              value: `${request.cf?.asOrganization ?? "Not Found"}`,
-            },
-            {
-              name: "Data Center",
-              value: `${request.cf?.colo ?? "Not Found"}`,
-            },
-            {
-              name: "Country",
-              value: `${request.cf?.country ?? "Not Found"}`,
-            },
-            {
-              name: "City",
-              value: `${request.cf?.city ?? "Not Found"}`,
-            },
-          ],
-        },
-      ],
-    };
+      const message: Partial<APIMessage> = {
+        embeds: [
+          {
+            type: EmbedType.Rich,
+            title: "edmagu.roにアクセスがありました",
+            description: "Visitor's Private Geolocation Data",
+            fields: [
+              {
+                name: "IP Address",
+                value: `${ipAddress ?? "Not Found"}`,
+              },
+              {
+                name: "ASN",
+                value: `${request.cf?.asn ?? "Not Found"}`,
+              },
+              {
+                name: "AS Organization",
+                value: `${request.cf?.asOrganization ?? "Not Found"}`,
+              },
+              {
+                name: "Data Center",
+                value: `${request.cf?.colo ?? "Not Found"}`,
+              },
+              {
+                name: "Country",
+                value: `${request.cf?.country ?? "Not Found"}`,
+              },
+              {
+                name: "City",
+                value: `${request.cf?.city ?? "Not Found"}`,
+              },
+            ],
+          },
+        ],
+      };
 
-    await fetch(environment?.WEBHOOK_URL ?? "https://example.com", {
-      body: JSON.stringify(message),
-      method: "POST",
-      headers: { "content-type": "application/json" },
-    });
+      await fetch(environment.WEBHOOK_URL, {
+        body: JSON.stringify(message),
+        method: "POST",
+        headers: { "content-type": "application/json" },
+      });
+    }
 
-    const destinationURL = "https://twitter.com/east9698";
+    const destinationURL = "https://x.com/east9698";
     const statusCode = 301;
 
     return Response.redirect(destinationURL, statusCode);
