@@ -11,7 +11,7 @@
     "deploy": "wrangler publish"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20231002.0",
+    "@cloudflare/workers-types": "4.20231010.0",
     "@types/eslint": "8.44.4",
     "@universe/eslint-config-universe": "workspace:*",
     "@universe/tsconfig": "workspace:*",
