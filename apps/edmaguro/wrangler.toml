@@ -2,6 +2,7 @@ name = "edmaguro"
 main = "src/index.ts"
 # https://developers.cloudflare.com/workers/configuration/compatibility-dates/#change-history
 compatibility_date = "2023-08-15"
+minify = true
 send_metrics = false
 
 routes = [
