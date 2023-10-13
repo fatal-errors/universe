@@ -8,7 +8,7 @@
     "format:check": "prettier . --check",
     "lint": "TIMING=1 eslint .",
     "test": "vitest run",
-    "deploy": "wrangler publish"
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "4.20231010.0",
