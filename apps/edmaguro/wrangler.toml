@@ -8,5 +8,8 @@ routes = [
   { pattern = "edmagu.ro/*", zone_id = "63edc8cce616f1c5923233c3d90179ca" },
 ]
 
+[placement]
+mode = "smart"
+
 [vars]
 _ = "Dummy value to always generate Env interface"
