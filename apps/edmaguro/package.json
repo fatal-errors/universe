@@ -20,6 +20,6 @@
     "prettier": "3.0.3",
     "typescript": "5.2.2",
     "vitest": "0.34.6",
-    "wrangler": "3.13.2"
+    "wrangler": "3.14.0"
   }
 }
