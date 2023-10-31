@@ -30,6 +30,8 @@ jobs:
           node-version: lts/*
           check-latest: true
 
+      - run: corepack enable
+
       # Dependencies
       - run: yarn install --immutable
 
@@ -61,6 +63,8 @@ jobs:
         with:
           node-version: lts/*
           check-latest: true
+
+      - run: corepack enable
 
       # Dependencies
       - run: yarn install --immutable
