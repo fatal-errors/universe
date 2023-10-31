@@ -1,4 +1,11 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@universe/tsconfig/base"
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "module": "CommonJS",
+    "moduleDetection": "force",
+    "moduleResolution": "Node10",
+    "noEmit": true
+  },
+  "exclude": ["node_modules"]
 }

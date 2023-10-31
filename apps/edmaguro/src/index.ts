@@ -1,14 +1,17 @@
+import type {
+  IncomingRequestCfProperties,
+  Request,
+} from "@cloudflare/workers-types/experimental";
 import { type APIMessage, EmbedType } from "discord-api-types/v10";
 
 interface Environment extends Omit<Env, "_"> {
   WEBHOOK_URL: string;
 }
 
+type IncomingRequest = Request<unknown, IncomingRequestCfProperties>;
+
 export default {
-  async fetch(
-    request: Request<unknown, IncomingRequestCfProperties>,
-    environment?: Environment,
-  ) {
+  async fetch(request: IncomingRequest, environment?: Environment) {
     if (environment?.WEBHOOK_URL) {
       const ipAddress = request.headers.get("CF-Connecting-IP");
 

@@ -1,5 +1,11 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@universe/tsconfig/base",
-  "exclude": ["dist"]
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "Bundler",
+    "noEmit": true
+  },
+  "exclude": ["dist", "node_modules"]
 }
