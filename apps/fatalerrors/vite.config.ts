@@ -1,7 +1,13 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  preview: {
+  build: {
+    cssMinify: "lightningcss",
+  },
+  css: {
+    transformer: "lightningcss",
+  },
+  server: {
     port: 3000,
   },
 });
