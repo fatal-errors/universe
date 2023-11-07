@@ -862,13 +862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:8.44.6":
-  version: 8.44.6
-  resolution: "@types/eslint@npm:8.44.6"
+"@types/eslint@npm:8.44.7":
+  version: 8.44.7
+  resolution: "@types/eslint@npm:8.44.7"
   dependencies:
     "@types/estree": "npm:*"
     "@types/json-schema": "npm:*"
-  checksum: fc449107eb186bdc5d30149bbcb4e673af8530afdeacca3b89f14deefcbfc67463157d6a81b42cd9df92ddeafda5351853d13310ff7ac6ab0d9769ac7cc0cc3a
+  checksum: 447b55ccff47668fc63466728e7e598ae16a03de8d489350e855b6020ad16f58a703e75b875376dd6cd5fcab630311a805fa7f934476637ea35819f01c9db3ca
   languageName: node
   linkType: hard
 
@@ -1060,7 +1060,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20231025.0"
     "@tsconfig/strictest": "npm:2.0.2"
-    "@types/eslint": "npm:8.44.6"
+    "@types/eslint": "npm:8.44.7"
     "@universe/eslint-config-universe": "workspace:*"
     discord-api-types: "npm:0.37.62"
     eslint: "npm:8.53.0"
@@ -1077,7 +1077,7 @@ __metadata:
   resolution: "@universe/eslint-config-universe@workspace:packages/eslint-config-universe"
   dependencies:
     "@tsconfig/strictest": "npm:2.0.2"
-    "@types/eslint": "npm:8.44.6"
+    "@types/eslint": "npm:8.44.7"
     "@typescript-eslint/eslint-plugin": "npm:6.9.1"
     "@typescript-eslint/parser": "npm:6.9.1"
     eslint: "npm:8.53.0"
