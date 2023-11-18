@@ -932,7 +932,7 @@ __metadata:
     eslint-plugin-import: "npm:2.29.0"
     eslint-plugin-prettier: "npm:5.0.1"
     eslint-plugin-simple-import-sort: "npm:10.0.0"
-    eslint-plugin-turbo: "npm:1.10.17-canary.2"
+    eslint-plugin-turbo: "npm:1.10.17-canary.3"
     eslint-plugin-unicorn: "npm:49.0.0"
     prettier: "npm:3.1.0"
     prettier-plugin-packagejson: "npm:2.4.6"
@@ -2116,14 +2116,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-turbo@npm:1.10.17-canary.2":
-  version: 1.10.17-canary.2
-  resolution: "eslint-plugin-turbo@npm:1.10.17-canary.2"
+"eslint-plugin-turbo@npm:1.10.17-canary.3":
+  version: 1.10.17-canary.3
+  resolution: "eslint-plugin-turbo@npm:1.10.17-canary.3"
   dependencies:
     dotenv: "npm:16.0.3"
   peerDependencies:
     eslint: ">6.6.0"
-  checksum: 3d5adac42f3f15308fe43ff9c51d829797ad502283bfd830e9124fefe8f5ade7e1385559ca1fb73960ce910462fe27338ccea5034ec164b05d58f6f0c718b739
+  checksum: c696b63d595b697f23679cb0ea9effad0f883c77418f37be5e2755055abf6527ebfd04fddac4f0bdf4ce40d2bde7de1a98965f0b8eaf2fe0a2780daf3ad1e39c
   languageName: node
   linkType: hard
 
