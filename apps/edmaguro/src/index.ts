@@ -24,7 +24,7 @@ export default {
             fields: [
               {
                 name: "IP Address",
-                value: `${ipAddress ?? "Not Found"}`,
+                value: ipAddress ?? "Not Found",
               },
               {
                 name: "ASN",
@@ -32,19 +32,19 @@ export default {
               },
               {
                 name: "AS Organization",
-                value: `${request.cf?.asOrganization ?? "Not Found"}`,
+                value: request.cf?.asOrganization ?? "Not Found",
               },
               {
                 name: "Data Center",
-                value: `${request.cf?.colo ?? "Not Found"}`,
+                value: request.cf?.colo ?? "Not Found",
               },
               {
                 name: "Country",
-                value: `${request.cf?.country ?? "Not Found"}`,
+                value: request.cf?.country ?? "Not Found",
               },
               {
                 name: "City",
-                value: `${request.cf?.city ?? "Not Found"}`,
+                value: request.cf?.city ?? "Not Found",
               },
             ],
           },
