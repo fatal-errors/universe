@@ -16,7 +16,7 @@
     "@tsconfig/strictest": "2.0.2",
     "@types/eslint": "8.56.0",
     "@universe/eslint-config-universe": "workspace:*",
-    "discord-api-types": "0.37.66",
+    "discord-api-types": "0.37.67",
     "eslint": "8.56.0",
     "prettier": "3.1.1",
     "prettier-plugin-packagejson": "2.4.8",
