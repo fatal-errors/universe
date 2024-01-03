@@ -14,7 +14,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "4.20231218.0",
     "@tsconfig/strictest": "2.0.2",
-    "@types/eslint": "8.56.0",
+    "@types/eslint": "8.56.1",
     "@universe/eslint-config-universe": "workspace:*",
     "discord-api-types": "0.37.67",
     "eslint": "8.56.0",
