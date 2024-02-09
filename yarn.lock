@@ -932,7 +932,7 @@ __metadata:
     prettier-plugin-packagejson: "npm:2.4.10"
     typescript: "npm:5.3.3"
     vitest: "npm:1.2.2"
-    wrangler: "npm:3.27.0"
+    wrangler: "npm:3.28.0"
   languageName: unknown
   linkType: soft
 
@@ -5372,9 +5372,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.27.0":
-  version: 3.27.0
-  resolution: "wrangler@npm:3.27.0"
+"wrangler@npm:3.28.0":
+  version: 3.28.0
+  resolution: "wrangler@npm:3.28.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:^0.2.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -5391,13 +5391,18 @@ __metadata:
     selfsigned: "npm:^2.0.1"
     source-map: "npm:0.6.1"
     xxhash-wasm: "npm:^1.0.1"
+  peerDependencies:
+    "@cloudflare/workers-types": ^4.20230914.0
   dependenciesMeta:
     fsevents:
+      optional: true
+  peerDependenciesMeta:
+    "@cloudflare/workers-types":
       optional: true
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/2a5c311552cc17d59af79519397b9f8aeeabd6c2722dc35993b78bb1f6cd4df995a089dfce5d5bfaa0f2c5267505b568d6220e7c8b291c621199fe151ea7ff45
+  checksum: 10c0/79bbd838a1e1bcd021f6ee05d3d1d99f32d2abc3107cc4ffbb80c003f8e04ffe030f541d2e6c6cbff7aca55b9312e06b3019485a4b6de8a0be8f41828c735006
   languageName: node
   linkType: hard
 
