@@ -84,10 +84,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20240129.0":
-  version: 4.20240129.0
-  resolution: "@cloudflare/workers-types@npm:4.20240129.0"
-  checksum: 10c0/9d702f8c53c04d952ace255b438dfd098369f46efc063de8c0d937eac95e22b103941262e59dcdf6d524394ae797af5c94e972ff47cbd03bc30f408656a640cf
+"@cloudflare/workers-types@npm:4.20240208.0":
+  version: 4.20240208.0
+  resolution: "@cloudflare/workers-types@npm:4.20240208.0"
+  checksum: 10c0/0655f9cfa008461dc126baee59530607b19813c90b325f25ff10366b9b5734c19e1e8a7aa38deb5ae337ae50a44d7a25dca07c877d5a86157464284c36316b1d
   languageName: node
   linkType: hard
 
@@ -922,7 +922,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@universe/edmaguro@workspace:apps/edmaguro"
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20240129.0"
+    "@cloudflare/workers-types": "npm:4.20240208.0"
     "@tsconfig/strictest": "npm:2.0.2"
     "@types/eslint": "npm:8.56.2"
     "@universe/eslint-config-universe": "workspace:*"
