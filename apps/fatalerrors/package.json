@@ -13,7 +13,7 @@
     "modern-css-reset": "1.4.0"
   },
   "devDependencies": {
-    "@tsconfig/strictest": "2.0.2",
+    "@tsconfig/strictest": "2.0.3",
     "@universe/eslint-config-universe": "workspace:*",
     "eslint": "8.56.0",
     "lightningcss": "1.23.0",
