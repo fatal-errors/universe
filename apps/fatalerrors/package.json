@@ -15,7 +15,7 @@
   "devDependencies": {
     "@tsconfig/strictest": "2.0.3",
     "@universe/eslint-config-universe": "workspace:*",
-    "eslint": "8.56.0",
+    "eslint": "8.57.0",
     "lightningcss": "1.24.0",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.12",
