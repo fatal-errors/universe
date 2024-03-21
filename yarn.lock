@@ -932,7 +932,7 @@ __metadata:
     prettier-plugin-packagejson: "npm:2.4.12"
     typescript: "npm:5.4.2"
     vitest: "npm:1.4.0"
-    wrangler: "npm:3.35.0"
+    wrangler: "npm:3.36.0"
   languageName: unknown
   linkType: soft
 
@@ -5506,9 +5506,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.35.0":
-  version: 3.35.0
-  resolution: "wrangler@npm:3.35.0"
+"wrangler@npm:3.36.0":
+  version: 3.36.0
+  resolution: "wrangler@npm:3.36.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.1"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -5536,7 +5536,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/97d30141d49b1ccb62df5f2979d45f276ac938230f57bba4026970275e8214fdff8d26f3079a0021ba0b21744df4e1b889f1047551d042d45cf519e9f8c83f61
+  checksum: 10c0/dca71cb23bdb21589c4b09e320532b2548f531d6fdf73206db3c0bd90ddcc257c4713714914b8c561ae05b354343f4833215522f44ea12542ddbc8ee73c363c6
   languageName: node
   linkType: hard
 
