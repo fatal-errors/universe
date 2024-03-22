@@ -28,7 +28,7 @@ export default {
               },
               {
                 name: "ASN",
-                value: `${request.cf?.asn ?? "Not Found"}`,
+                value: request.cf?.asn.toString() ?? "Not Found",
               },
               {
                 name: "AS Organization",
