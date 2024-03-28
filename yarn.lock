@@ -719,10 +719,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/strictest@npm:2.0.4":
-  version: 2.0.4
-  resolution: "@tsconfig/strictest@npm:2.0.4"
-  checksum: 10c0/cb5a3a2e4f081266031270babe74ab1814d6688e179c975514172adb24a66e407291b392043fc0b8301dc3dde511cbff52ac63d47b0ef13ad368d923577b1f31
+"@tsconfig/strictest@npm:2.0.5":
+  version: 2.0.5
+  resolution: "@tsconfig/strictest@npm:2.0.5"
+  checksum: 10c0/cfc86da2d57f7b4b0827701b132c37a4974284e5c40649656c0e474866dfd8a69f57c6718230d8a8139967e2a95438586b8224c13ab0ff9d3a43eda771c50cc4
   languageName: node
   linkType: hard
 
@@ -924,7 +924,7 @@ __metadata:
   resolution: "@universe/edmaguro@workspace:apps/edmaguro"
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240320.1"
-    "@tsconfig/strictest": "npm:2.0.4"
+    "@tsconfig/strictest": "npm:2.0.5"
     "@types/eslint": "npm:8.56.6"
     "@universe/eslint-config-universe": "workspace:*"
     discord-api-types: "npm:0.37.76"
@@ -941,7 +941,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@universe/eslint-config-universe@workspace:packages/eslint-config-universe"
   dependencies:
-    "@tsconfig/strictest": "npm:2.0.4"
+    "@tsconfig/strictest": "npm:2.0.5"
     "@types/eslint": "npm:8.56.6"
     "@typescript-eslint/eslint-plugin": "npm:7.4.0"
     "@typescript-eslint/parser": "npm:7.4.0"
@@ -963,7 +963,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@universe/fatalerrors@workspace:apps/fatalerrors"
   dependencies:
-    "@tsconfig/strictest": "npm:2.0.4"
+    "@tsconfig/strictest": "npm:2.0.5"
     "@universe/eslint-config-universe": "workspace:*"
     eslint: "npm:8.57.0"
     lightningcss: "npm:1.24.1"
