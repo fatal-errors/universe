@@ -19,7 +19,7 @@
     "discord-api-types": "0.37.76",
     "eslint": "8.57.0",
     "prettier": "3.2.5",
-    "prettier-plugin-packagejson": "2.4.12",
+    "prettier-plugin-packagejson": "2.4.13",
     "typescript": "5.4.3",
     "vitest": "1.4.0",
     "wrangler": "3.39.0"
