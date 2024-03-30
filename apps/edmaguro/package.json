@@ -12,7 +12,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240320.1",
+    "@cloudflare/workers-types": "4.20240329.0",
     "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.6",
     "@universe/eslint-config-universe": "workspace:*",
