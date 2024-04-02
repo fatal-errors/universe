@@ -941,7 +941,7 @@ __metadata:
     "@tsconfig/strictest": "npm:2.0.5"
     "@types/eslint": "npm:8.56.6"
     "@universe/eslint-config-universe": "workspace:*"
-    discord-api-types: "npm:0.37.77"
+    discord-api-types: "npm:0.37.78"
     eslint: "npm:8.57.0"
     prettier: "npm:3.2.5"
     prettier-plugin-packagejson: "npm:2.4.14"
@@ -1711,10 +1711,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:0.37.77":
-  version: 0.37.77
-  resolution: "discord-api-types@npm:0.37.77"
-  checksum: 10c0/8903e12bfaa9b25b9ee3bd2016b9872123e98e5605625a53dece10d1a8b76fa5f92a5cf92282d39d702b391f27f434eed9a532c3a9f83885d78193db39f09b90
+"discord-api-types@npm:0.37.78":
+  version: 0.37.78
+  resolution: "discord-api-types@npm:0.37.78"
+  checksum: 10c0/a34e819b0e5f1883bf45a33f3dfd5a876be39aa279332c6bd0704690129f4186ae5c0668f99f9f9f3fca878955ddcbb2c555df8ff77b21cb7126124826d09b1d
   languageName: node
   linkType: hard
 
