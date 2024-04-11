@@ -19,7 +19,7 @@
     "lightningcss": "1.24.1",
     "prettier": "3.2.5",
     "prettier-plugin-packagejson": "2.4.14",
-    "typescript": "5.4.4",
+    "typescript": "5.4.5",
     "vite": "5.2.8"
   }
 }
