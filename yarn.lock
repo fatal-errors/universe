@@ -944,7 +944,7 @@ __metadata:
     discord-api-types: "npm:0.37.79"
     eslint: "npm:8.57.0"
     prettier: "npm:3.2.5"
-    prettier-plugin-packagejson: "npm:2.4.14"
+    prettier-plugin-packagejson: "npm:2.5.0"
     typescript: "npm:5.4.5"
     vitest: "npm:1.4.0"
     wrangler: "npm:3.49.0"
@@ -968,7 +968,7 @@ __metadata:
     eslint-plugin-turbo: "npm:1.13.2"
     eslint-plugin-unicorn: "npm:52.0.0"
     prettier: "npm:3.2.5"
-    prettier-plugin-packagejson: "npm:2.4.14"
+    prettier-plugin-packagejson: "npm:2.5.0"
     typescript: "npm:5.4.5"
   languageName: unknown
   linkType: soft
@@ -983,7 +983,7 @@ __metadata:
     lightningcss: "npm:1.24.1"
     modern-css-reset: "npm:1.4.0"
     prettier: "npm:3.2.5"
-    prettier-plugin-packagejson: "npm:2.4.14"
+    prettier-plugin-packagejson: "npm:2.5.0"
     typescript: "npm:5.4.5"
     vite: "npm:5.2.8"
   languageName: unknown
@@ -4216,9 +4216,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-packagejson@npm:2.4.14":
-  version: 2.4.14
-  resolution: "prettier-plugin-packagejson@npm:2.4.14"
+"prettier-plugin-packagejson@npm:2.5.0":
+  version: 2.5.0
+  resolution: "prettier-plugin-packagejson@npm:2.5.0"
   dependencies:
     sort-package-json: "npm:2.10.0"
     synckit: "npm:0.9.0"
@@ -4227,7 +4227,7 @@ __metadata:
   peerDependenciesMeta:
     prettier:
       optional: true
-  checksum: 10c0/61c85f7ee79c298e16d9a10806253e01788f81faeb523dd66f971a26f10f70b2268cf4ec35a883b5ad05235624ba5602968b20e100aec390f2d51d7a47c0b250
+  checksum: 10c0/d9c1e064d45f3eb9f85f70b4450496eaae5ac4e23a4931d2881503478d364a30a4abf436dd016ee89434f197156dbcfa5d417fc66126c4142906654c8f0968c8
   languageName: node
   linkType: hard
 
@@ -5342,7 +5342,7 @@ __metadata:
   resolution: "universe@workspace:."
   dependencies:
     prettier: "npm:3.2.5"
-    prettier-plugin-packagejson: "npm:2.4.14"
+    prettier-plugin-packagejson: "npm:2.5.0"
     turbo: "npm:1.13.2"
   languageName: unknown
   linkType: soft
