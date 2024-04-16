@@ -21,6 +21,12 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
+      - name: Set git to use LF
+        run: |
+          git config --global core.autocrlf false
+          git config --global core.eol lf
+          git config --global core.ignorecase false
+
       - name: Checkout tree
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
 
@@ -35,11 +41,8 @@ jobs:
       # Dependencies
       - run: yarn install --immutable
 
-      # Check formatting with prettier
-      - run: yarn format:check
-
-      # Linting with eslint
-      - run: yarn lint
+      # CI checks with Biome
+      - run: yarn ci
 
   build-and-test:
     name: Build and Test

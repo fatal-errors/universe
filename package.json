@@ -1,19 +1,18 @@
 {
   "name": "universe",
   "workspaces": [
-    "apps/*",
-    "packages/*"
+    "apps/*"
   ],
   "scripts": {
     "build": "turbo run build",
-    "format": "turbo run format",
-    "format:check": "turbo run format:check",
-    "lint": "turbo run lint",
+    "ci": "biome ci .",
+    "format": "biome format --write .",
+    "format:check": "biome format",
+    "lint": "biome lint .",
     "test": "turbo run test"
   },
   "devDependencies": {
-    "prettier": "3.2.5",
-    "prettier-plugin-packagejson": "2.5.0",
+    "@biomejs/biome": "1.7.0",
     "turbo": "1.13.2"
   },
   "packageManager": "yarn@4.1.1"

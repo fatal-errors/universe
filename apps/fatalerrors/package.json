@@ -4,21 +4,14 @@
   "private": true,
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
-    "format": "prettier . --write --ignore-path .gitignore",
-    "format:check": "prettier . --check --ignore-path .gitignore",
-    "lint": "TIMING=1 eslint ."
+    "dev": "vite"
   },
   "dependencies": {
     "modern-css-reset": "1.4.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
-    "@universe/eslint-config-universe": "workspace:*",
-    "eslint": "8.57.0",
     "lightningcss": "1.24.1",
-    "prettier": "3.2.5",
-    "prettier-plugin-packagejson": "2.5.0",
     "typescript": "5.4.5",
     "vite": "5.2.8"
   }
