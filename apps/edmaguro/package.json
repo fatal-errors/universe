@@ -11,7 +11,7 @@
   "devDependencies": {
     "@cloudflare/workers-types": "4.20240423.0",
     "@tsconfig/strictest": "2.0.5",
-    "discord-api-types": "0.37.81",
+    "discord-api-types": "0.37.82",
     "typescript": "5.4.5",
     "vitest": "1.5.1",
     "wrangler": "3.52.0"
