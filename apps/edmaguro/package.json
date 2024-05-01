@@ -13,7 +13,7 @@
     "@tsconfig/strictest": "2.0.5",
     "discord-api-types": "0.37.83",
     "typescript": "5.4.5",
-    "vitest": "1.5.2",
+    "vitest": "1.5.3",
     "wrangler": "3.53.0"
   }
 }
