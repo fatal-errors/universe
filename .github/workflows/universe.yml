@@ -77,3 +77,39 @@ jobs:
 
       # Build
       - run: yarn build
+
+  deploy:
+    name: Deploy Worker
+
+    if: github.event_name == 'push' && github.ref_name == 'main'
+
+    needs:
+      - hygiene
+      - build-and-test
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout tree
+        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+
+      - name: Set-up Node.js LTS
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version: lts/*
+          check-latest: true
+
+      - run: corepack enable
+
+      # Dependencies
+      - run: yarn install --immutable
+
+      # Build
+      - run: yarn build
+
+      # Deploy
+      - run: yarn deploy
+        working-directory: apps/edmaguro
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
