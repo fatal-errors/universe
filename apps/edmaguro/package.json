@@ -9,7 +9,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "4.20240603.0",
+    "@cloudflare/workers-types": "4.20240605.0",
     "@tsconfig/strictest": "2.0.5",
     "discord-api-types": "0.37.87",
     "typescript": "5.4.5",
