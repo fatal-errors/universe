@@ -14,6 +14,6 @@
     "discord-api-types": "0.37.87",
     "typescript": "5.4.5",
     "vitest": "1.6.0",
-    "wrangler": "3.59.0"
+    "wrangler": "3.60.0"
   }
 }
