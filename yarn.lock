@@ -732,7 +732,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:4.20240605.0"
     "@tsconfig/strictest": "npm:2.0.5"
-    discord-api-types: "npm:0.37.87"
+    discord-api-types: "npm:0.37.88"
     typescript: "npm:5.4.5"
     vitest: "npm:1.6.0"
     wrangler: "npm:3.60.0"
@@ -1142,10 +1142,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"discord-api-types@npm:0.37.87":
-  version: 0.37.87
-  resolution: "discord-api-types@npm:0.37.87"
-  checksum: 10c0/d29ce407fb504ce6321ddad5a10a0e487593f5fb8ba84dffb2d92c06a662e8b55cc29e3339b285a307c830ad2a256bf85f5e3d9fb455ac026bdb5f779c261375
+"discord-api-types@npm:0.37.88":
+  version: 0.37.88
+  resolution: "discord-api-types@npm:0.37.88"
+  checksum: 10c0/71c29f81301e6d82105058258e8b519eb13fb92def62c7646839932ab0ef27c648aee5fc79645c1d6708ba5636009c00eb735316dd7251e25a9cbedf1f8b0bad
   languageName: node
   linkType: hard
 
