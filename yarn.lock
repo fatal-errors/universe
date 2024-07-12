@@ -757,7 +757,7 @@ __metadata:
     discord-api-types: "npm:0.37.92"
     typescript: "npm:5.5.3"
     vitest: "npm:2.0.2"
-    wrangler: "npm:3.63.2"
+    wrangler: "npm:3.64.0"
   languageName: unknown
   linkType: soft
 
@@ -2973,9 +2973,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.63.2":
-  version: 3.63.2
-  resolution: "wrangler@npm:3.63.2"
+"wrangler@npm:3.64.0":
+  version: 3.64.0
+  resolution: "wrangler@npm:3.64.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
@@ -3005,7 +3005,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/846093938c49321556561555a958d40cc99445ff962c7428a03c711a9b49c5b7a7cc208ad3f3140c96d05cb1e4a9df8c0a947cb7c010c71ac3798e0710a3bcee
+  checksum: 10c0/0c93c26eee0f2e9ee748f5459e831f26549f1f385ad82159a41a18b0f3951249437b000d013d28298bf3fa573c73545fc5bdb4eeb01f698c93f6ce9ab1844750
   languageName: node
   linkType: hard
 
