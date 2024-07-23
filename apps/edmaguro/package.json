@@ -12,7 +12,7 @@
     "@cloudflare/workers-types": "4.20240722.0",
     "@tsconfig/strictest": "2.0.5",
     "discord-api-types": "0.37.93",
-    "typescript": "5.5.3",
+    "typescript": "5.5.4",
     "vitest": "2.0.4",
     "wrangler": "3.65.1"
   }
