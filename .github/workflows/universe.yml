@@ -39,10 +39,10 @@ jobs:
       - run: corepack enable
 
       # Dependencies
-      - run: yarn install --immutable
+      - run: pnpm install --frozen-lockfile
 
       # CI checks with Biome
-      - run: yarn ci
+      - run: pnpm run lint
 
   build-and-test:
     name: Build and Test
@@ -70,13 +70,13 @@ jobs:
       - run: corepack enable
 
       # Dependencies
-      - run: yarn install --immutable
+      - run: pnpm install --frozen-lockfile
 
       # Run the testsuite
-      - run: yarn test
+      - run: pnpm run test
 
       # Build
-      - run: yarn build
+      - run: pnpm run build
 
   deploy:
     name: Deploy Worker
@@ -102,13 +102,13 @@ jobs:
       - run: corepack enable
 
       # Dependencies
-      - run: yarn install --immutable
+      - run: pnpm install --frozen-lockfile
 
       # Build
-      - run: yarn build
+      - run: pnpm run build
 
       # Deploy
-      - run: yarn deploy
+      - run: pnpm run deploy
         working-directory: apps/edmaguro
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

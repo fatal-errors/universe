@@ -1,4 +1,2 @@
-/.yarn/
-
-.turbo/
-node_modules/
+/.turbo/
+/node_modules/

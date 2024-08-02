@@ -11,7 +11,7 @@ Contributions to this project are welcome and should be submitted via GitHub pul
 Clone this repository, then run the following commands:
 
 ```bash
-yarn install --immutable
+pnpm install --frozen-lockfile
 ```
 
 ### Structure of the universe

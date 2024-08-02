@@ -1,19 +1,15 @@
 {
   "name": "universe",
-  "workspaces": [
-    "apps/*"
-  ],
+  "private": true,
   "scripts": {
     "build": "turbo run build",
-    "ci": "biome ci .",
-    "format": "biome format --write .",
-    "format:check": "biome format",
-    "lint": "biome lint .",
+    "fix": "biome check --fix",
+    "lint": "biome check",
     "test": "turbo run test"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "turbo": "2.0.11"
   },
-  "packageManager": "yarn@4.3.1"
+  "packageManager": "pnpm@9.6.0"
 }
