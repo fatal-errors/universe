@@ -729,7 +729,7 @@ __metadata:
     discord-api-types: "npm:0.37.100"
     typescript: "npm:5.6.2"
     vitest: "npm:2.1.1"
-    wrangler: "npm:3.78.2"
+    wrangler: "npm:3.78.3"
   languageName: unknown
   linkType: soft
 
@@ -1834,9 +1834,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240909.1":
-  version: 3.20240909.1
-  resolution: "miniflare@npm:3.20240909.1"
+"miniflare@npm:3.20240909.2":
+  version: 3.20240909.2
+  resolution: "miniflare@npm:3.20240909.2"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -1852,7 +1852,7 @@ __metadata:
     zod: "npm:^3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10c0/e7d4fe6db4a15a1ca28f210e0b85dd5efae3b79184628e794bbb899dd035b28e1782aa499937bc336ab20a7b07998817f37e8ab294d1b542187bb7c4bf86af5d
+  checksum: 10c0/afdeef8cf30bcf76898d7b13e411720e0a02e21a19848862ba722f0a9c22590f115abb171f224e204c3128e88a6852996a8317a5ec647dc441ba546cc6ba23d2
   languageName: node
   linkType: hard
 
@@ -2089,7 +2089,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"path-to-regexp@npm:^6.2.0":
+"path-to-regexp@npm:^6.3.0":
   version: 6.3.0
   resolution: "path-to-regexp@npm:6.3.0"
   checksum: 10c0/73b67f4638b41cde56254e6354e46ae3a2ebc08279583f6af3d96fe4664fc75788f74ed0d18ca44fa4a98491b69434f9eee73b97bb5314bd1b5adb700f5c18d6
@@ -2883,9 +2883,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:3.78.2":
-  version: 3.78.2
-  resolution: "wrangler@npm:3.78.2"
+"wrangler@npm:3.78.3":
+  version: 3.78.3
+  resolution: "wrangler@npm:3.78.3"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/workers-shared": "npm:0.5.3"
@@ -2896,9 +2896,9 @@ __metadata:
     date-fns: "npm:^3.6.0"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20240909.1"
+    miniflare: "npm:3.20240909.2"
     nanoid: "npm:^3.3.3"
-    path-to-regexp: "npm:^6.2.0"
+    path-to-regexp: "npm:^6.3.0"
     resolve: "npm:^1.22.8"
     resolve.exports: "npm:^2.0.2"
     selfsigned: "npm:^2.0.1"
@@ -2917,7 +2917,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10c0/5f6cbdbde330dbe4c0fa15d7889daa9144520d70228e4b9d916c54513c5b408632a97de4b1893ed1d0c73fcebb451d468152b4f022d5368716de317461e4475d
+  checksum: 10c0/a12aaa9e5f182cd8eb9e58842b0bb819d46a7fb31bf00b5ce0d95521e5a23b08651bc054cc1c2fe286ac6d63a2238da5266dd1d9b576729b0be0fa3f1d7d3685
   languageName: node
   linkType: hard
 
