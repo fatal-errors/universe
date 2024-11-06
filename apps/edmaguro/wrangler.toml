@@ -1,17 +1,18 @@
 name = "edmaguro"
 main = "src/index.ts"
 # https://developers.cloudflare.com/workers/configuration/compatibility-dates/#change-history
-compatibility_date = "2023-08-15"
+compatibility_date = "2024-09-02"
 minify = true
 send_metrics = false
+
+[vars]
+_ = "Dummy value to always generate Env interface"
 
 routes = [
   { pattern = "edmagu.ro", zone_id = "63edc8cce616f1c5923233c3d90179ca", custom_domain = true },
   { pattern = "edmagu.ro/*", zone_id = "63edc8cce616f1c5923233c3d90179ca" },
 ]
 
-[placement]
-mode = "smart"
-
-[vars]
-_ = "Dummy value to always generate Env interface"
+[observability]
+enabled = true
+head_sampling_rate = 1
