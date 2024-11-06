@@ -9,8 +9,6 @@
     ":pinVersions",
     ":semanticCommitsDisabled"
   ],
-  "postUpdateOptions": [
-    "yarnDedupeHighest"
-  ],
+  "postUpdateOptions": ["yarnDedupeHighest"],
   "rebaseWhen": "conflicted"
 }
