@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
-    "lightningcss": "1.28.1",
+    "lightningcss": "1.28.2",
     "typescript": "5.7.2",
     "vite": "5.4.11"
   }
