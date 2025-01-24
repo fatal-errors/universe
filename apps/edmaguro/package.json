@@ -11,7 +11,7 @@
   "devDependencies": {
     "@tsconfig/strictest": "2.0.5",
     "typescript": "5.7.3",
-    "vitest": "3.0.3",
+    "vitest": "3.0.4",
     "wrangler": "3.103.2"
   }
 }
